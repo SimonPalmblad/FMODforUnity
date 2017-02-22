@@ -16,14 +16,29 @@ public class AudioManager : MonoBehaviour
 	[HideInInspector]
 	public int material;
 
-	void Awake()
+    [FMODUnity.EventRef]
+    public string FmodFootstep;
+    FMOD.Studio.EventInstance FmodFootstepEv;
+    public string paramnameFootstepMaterial;
+
+    [FMODUnity.EventRef]
+    public string FmodBanana;
+    FMOD.Studio.EventInstance FmodBananaEv;
+    public string paramnameBananaMaterial;
+
+    void Awake()
 	{
 		audioTimeofday = GameObject.FindObjectOfType<AudioTimeofday> ();
 		audioPlayerActions = GameObject.FindObjectOfType<AudioPlayerActions> ();
 		audioEventATrigger = GameObject.FindObjectOfType<AudioEventATrigger> ();
 		audioEventBTrigger = GameObject.FindObjectOfType<AudioEventBTrigger> ();
 		material = 1;
-	}
+
+        //Here we instantiate the Fmod-event and associate it with the public string which specifies what event we want to call. 
+        FmodFootstepEv = FMODUnity.RuntimeManager.CreateInstance(FmodFootstep);
+
+        FmodFootstepEv = FMODUnity.RuntimeManager.CreateInstance(FmodBanana);
+    }
 
 	public void PlayerSpawned ()
 	{
@@ -32,7 +47,9 @@ public class AudioManager : MonoBehaviour
 
 	public void PlayerFootstep()
 	{
-		audioPlayerActions.PlayFootstep (material);
+        FmodFootstepEv.setParameterValue(paramnameFootstepMaterial, material);
+        FmodFootstepEv.start();
+        audioPlayerActions.PlayFootstep (material);
 	}
 
 	public void PlayerJump()

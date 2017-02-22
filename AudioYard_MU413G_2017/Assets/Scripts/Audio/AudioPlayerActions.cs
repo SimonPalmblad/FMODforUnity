@@ -3,9 +3,10 @@ using System.Collections;
 
 public class AudioPlayerActions : MonoBehaviour
 {
-	public bool showFootstepDebugMessages = false;
+    public bool showFootstepDebugMessages = false;
+   
 
-	public void PlayFootstep(int material)
+    public void PlayFootstep(int material)
 	{
 		if (!showFootstepDebugMessages)
 		{
@@ -15,6 +16,7 @@ public class AudioPlayerActions : MonoBehaviour
 		{
 			Debug.Log ("PlayerFootstep - Material: " + material);
 		}
+
 	}
 
 	public void PlayLand (int material)
