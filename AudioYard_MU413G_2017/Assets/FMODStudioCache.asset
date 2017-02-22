@@ -13,19 +13,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114256275970444848}
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   EditorEvents:
   - {fileID: 114774288134895128}
   - {fileID: 114551298039848652}
   - {fileID: 114044838402844454}
   - {fileID: 114776810149521188}
   - {fileID: 114602088914328606}
-  - {fileID: 114969956711795678}
   - {fileID: 114253405888167112}
-  MasterBankRef: {fileID: 114359221108112316}
+  - {fileID: 114106388352529160}
+  - {fileID: 114224666908786088}
+  MasterBankRef: {fileID: 114605982704360382}
   StringsBankRef: {fileID: 114256275970444848}
-  stringsBankWriteTime: 636233745685465376
+  stringsBankWriteTime: 636233822890235959
   cacheVersion: 2
+--- !u!114 &114026334545894116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DayNight
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114044838402844454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,14 +56,169 @@ MonoBehaviour:
   Path: event:/SFX/SFX_Stinger
   guid: 66f0dee2a5ac5647aa3eaf70e694b41c
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114611289425958070}
+  - {fileID: 114851673225847290}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114064339121710526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stinger_type
+  Min: 0
+  Max: 5
+  Default: 0
+--- !u!114 &114102378707437184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+--- !u!114 &114106388352529160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MU/MU_Main_MasterEventLooper
+  guid: 60f3df89f488e546b942124a13ccdb89
+  Banks:
+  - {fileID: 114605982704360382}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114238530018849390}
+  - {fileID: 114694626857932432}
+  - {fileID: 114457897128374762}
+  - {fileID: 114736632318296552}
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &114144879576001682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DayNight
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114224666908786088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/MU/MU_Main_PlebVersion
+  guid: d0f98773f28a204e8a3150e55a0ef5c9
+  Banks:
+  - {fileID: 114605982704360382}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114823120275866768}
+  - {fileID: 114349900729560564}
+  - {fileID: 114642350669255166}
+  - {fileID: 114600772447474442}
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &114233995053221870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 1
+  Max: 4
+  Default: 1
+--- !u!114 &114238530018849390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_S
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114239400639881642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 1
+  Max: 4
+  Default: 1
+--- !u!114 &114240988034551080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Zone
+  Min: 0
+  Max: 5
+  Default: 0
 --- !u!114 &114253405888167112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +233,7 @@ MonoBehaviour:
   Path: snapshot:/Snap_Reverb_S
   guid: d29f346e8aa14d4b887b995bb5ecfaa9
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -81,11 +252,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD Banks\Desktop\Master Bank.strings.bank
-  lastModified: 636233745685465376
+  lastModified: 636233822890235959
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1276
+    Value: 1348
   Exists: 1
 --- !u!114 &114307606599339298
 MonoBehaviour:
@@ -101,6 +272,36 @@ MonoBehaviour:
   Name: Zone
   Min: 0
   Max: 5
+  Default: 0
+--- !u!114 &114324125615906458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stinger_type
+  Min: 0
+  Max: 5
+  Default: 0
+--- !u!114 &114349900729560564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_B
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114359221108112316
 MonoBehaviour:
@@ -136,6 +337,21 @@ MonoBehaviour:
   Min: 0
   Max: 3
   Default: 0
+--- !u!114 &114457897128374762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DayNight
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114551298039848652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,13 +366,44 @@ MonoBehaviour:
   Path: event:/SFX/SFX_Footsteps
   guid: 562ef0699c2d6a468732c1dee1f37291
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 114838052339052640}
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114585292955008454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_B
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114600772447474442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_S
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114602088914328606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,13 +418,32 @@ MonoBehaviour:
   Path: snapshot:/Snap_Reverb_B
   guid: b1bedb3ba490fb4da88efa5dd32bf097
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+--- !u!114 &114605982704360382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: F:\Programs\Unity_Projects\FMODforUnity\AudioYard_MU413G_2017\Assets\FMOD
+    Banks\Desktop\Master Bank.bank
+  lastModified: 636233822890225958
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 6195072
+  Exists: 1
 --- !u!114 &114611289425958070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +458,36 @@ MonoBehaviour:
   Name: Stinger_type
   Min: 0
   Max: 5
+  Default: 0
+--- !u!114 &114642350669255166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+--- !u!114 &114662787767140736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_S
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114673124399473506
 MonoBehaviour:
@@ -208,6 +504,96 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114694626857932432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_B
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114718287465521424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Zone
+  Min: 0
+  Max: 5
+  Default: 0
+--- !u!114 &114718700159940616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+--- !u!114 &114720007420979046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_B
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114736632318296552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 3
+  Default: 0
+--- !u!114 &114746889130184120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Zone
+  Min: 0
+  Max: 5
+  Default: 0
 --- !u!114 &114774288134895128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,12 +608,12 @@ MonoBehaviour:
   Path: event:/SFX/SFX_Ambience
   guid: 4a1214cf3d9f2c41a2cc2d9793e66194
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114307606599339298}
+  - {fileID: 114240988034551080}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114776810149521188
@@ -244,13 +630,73 @@ MonoBehaviour:
   Path: event:/SFX/SFX_Proximity
   guid: 68d32f29f8e03642b4be5598a16490e7
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
+--- !u!114 &114794058371734894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Reverb_S
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114823120275866768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: DayNight
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114838052339052640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Material
+  Min: 1
+  Max: 4
+  Default: 1
+--- !u!114 &114851673225847290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stinger_type
+  Min: 0
+  Max: 5
+  Default: 0
 --- !u!114 &114853798860301284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,14 +741,14 @@ MonoBehaviour:
   Path: event:/MU/MU_Main
   guid: d0f98773f28a204e8a3150e55a0ef5c9
   Banks:
-  - {fileID: 114359221108112316}
+  - {fileID: 114605982704360382}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114673124399473506}
-  - {fileID: 114930338538642572}
-  - {fileID: 114372620581963870}
-  - {fileID: 114853798860301284}
+  - {fileID: 114144879576001682}
+  - {fileID: 114720007420979046}
+  - {fileID: 114718700159940616}
+  - {fileID: 114662787767140736}
   MinDistance: 0
   MaxDistance: 0

@@ -54,3 +54,7 @@ MonoBehaviour:
   audioMovingNPC: {fileID: 0}
   audioStationaryNPC: {fileID: 0}
   material: 1
+  FmodFootstep: event:/SFX/SFX_Footsteps
+  paramnameFootstepMaterial: Material
+  FmodBanana: 
+  paramnameBananaMaterial: 
